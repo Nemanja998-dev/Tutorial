@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="playstation-6.svg" class="logo" alt="">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="">Game Controllers</a></li>
+                    <li><a href="">VR Accessories</a></li>
+                    <li><a href="">Media Remotes</a></li>
+                    <li><a href="other.html">Others</a></li>
+                </ul>
+            </nav>
+            <img src="menu-24px.svg" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="row-2">
+            <div class="card">
+                <img src="gs.png">
+                <div class="description">
+                    <h2>PS4 headset</h2>
+                    <p>Wireles headset for PlayStation4</p>
+                </div>
+                <div class="space">
+                    <h3>$50.99</h3>
+                    <button type="button">Buy Now</button>
+                </div>
+            </div>
+            <div class="card2">
+                <img src="gs.png">
+                <div class="description">
+                    <h2>PS4 headset</h2>
+                    <p>Wireles headset for PlayStation4</p>
+
+                </div>
+                <div class="space">
+                    <h3>$50.99</h3>
+                    <button type="button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var menulist = document.getElementById("menulist");
+        menulist.style.maxHeight= "0px";
+
+        function togglemenu() {
+            if(menulist.style.maxHeight == "0px") {
+                menulist.style.maxHeight = "130px"
+            }
+            else {
+                menulist.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+</html>
